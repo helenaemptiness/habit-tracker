@@ -1,0 +1,39 @@
+.tracker {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tracker__container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.tracker__card {
+    background: #ffeeee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(116, 96, 124, 0.7);
+    overflow: hidden;
+}
+
+.tracker__header {
+    background: #9c797e;
+    background-image: url('/header_bg.png');
+    color: white;
+    padding: 16px 20px;
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tracker__title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.tracker__body {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
