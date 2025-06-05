@@ -79,18 +79,14 @@ function HabitsList({ onUpdateProgress }) {
         setHabits(prevHabits => 
             prevHabits.map(habit => {
                 if (habit.id === id) {
-                    if (!habit.completed) {
-                        return {
-                            ...habit,
-                            completed: true,
-                            streak: habit.streak + 1
-                        };
-                    } else {
-                        return {
-                            ...habit,
-                            completed: false
-                        };
-                    }
+                    const newCompletedState = !habit.completed;
+                    return {
+                        ...habit,
+                        completed: newCompletedState,
+                        streak: newCompletedState 
+                            ? habit.streak + 1
+                            : Math.max(0, habit.streak - 1) // Исправлено strak → streak
+                    };
                 }
                 return habit;
             })
