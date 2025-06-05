@@ -10,11 +10,6 @@
 .addHabitForm__input {
     flex: 1;
     padding: 0.5rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
     border: 2px solid #9c797e50;
     border-radius: 20px 0.25em 0.25em 20px;
     margin-right: 5px;
@@ -57,3 +52,25 @@
     outline: 0;
     box-shadow: 0 0 0 0.1rem rgba(216, 168, 113, 0.5);
 }
+
+@media (max-width: 480px) {
+        .addHabitForm__input {
+            width: 100%;
+            border-radius: 20px;
+            padding: 5px;
+            margin: 0;
+        }
+    .addHabitForm {
+        width: 100%;
+    }
+    .addHabitForm__button {
+        width: 8rem;
+        padding: 5px;
+    }
+    .addHabitForm__inputGroup {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    }
+

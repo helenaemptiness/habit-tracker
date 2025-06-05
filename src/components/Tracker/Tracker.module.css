@@ -37,3 +37,15 @@
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media (max-width: 480px) {
+        .tracker {
+            padding: 10px;
+        }
+        .tracker__header {
+            padding: 5px 9px;
+        }
+        .tracker__body{
+            padding: 12px;
+        }
+    }
